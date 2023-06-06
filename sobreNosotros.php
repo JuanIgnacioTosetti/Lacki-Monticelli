@@ -1,4 +1,4 @@
-<?php include '../layout/header.php'; ?> <!-- Incluye el archivo del header -->
+<?php include './layout/header.php'; ?> <!-- Incluye el archivo del header -->
 
-nosotros
-<?php include '../layout/footer.php'; ?>
+<h2>nosotros</h2>
+<?php include './layout/footer.php'; ?>
