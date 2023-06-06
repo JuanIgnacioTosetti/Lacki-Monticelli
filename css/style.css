@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+:root{
+    --negro:#292C35;
+    --negro2:#1d212b;
+    --blanco:#fefefe;
+    --gris:#e1e1e1;
+    --gris2:#afafaf;
+    --naranja:#e09145;
+}
+
+.mayus{
+  text-transform: uppercase;
+}
+
+
+/* Hero */
+
+  /* Estilos para el contenedor del hero */
+  .hero {
+    position: relative;
+    height: 100vh; /* Altura del hero, ajusta según necesites */
+    background-image: url('../assets/img/1.jpg'); /* Cambia 'imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Asegura que el hero esté por debajo del navbar */
+  }
+  
+  /* Estilos para el fondo oscuro con efecto blur */
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor de '0.5' para ajustar la opacidad del fondo oscuro */
+    backdrop-filter: blur(5px); 
+  }
+  
+  /* Estilos para el contenido del hero */
+  .hero-content {
+    text-align: center;
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo oscuro */
+  }
+  
+  /* Estilos para el título del hero */
+  .hero-content h1 {
+    font-size: 11vh;
+    font-weight: 500;
+    color: var(--blanco);
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el párrafo del hero */
+  .hero-content p {
+    font-size: 3em;
+    color: var(--blanco);
+  }
+  .parrafo2{
+    font-size: 30px;
+  }
+
+  
+  /* Estilos para el botón del hero */
+  .btn{
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: 2px solid var(--naranja);
+    border-radius: 60px;
+    transition: .6s;
+  }
+  .btn i{
+    color: var(--blanco);
+    margin-right: 20px;
+  }
+  .btn a{
+    color: var(--blanco);
+    font-size: 18px;
+    text-decoration: none;
+    
+  }
+  
+  .btn:hover {
+    background-color: var(--naranja);
+    color: var(--blanco);
+  }
+
+/* Sobre nosotros */
+.sobre_nosotros{
+  display: flex;
+  background-color: var(--blanco);
+}
+
+.sobre_nosotros img{
+  height: 850px;
+  position: relative;
+  right: 100px;
+}
+
+.sobre_nosotros .text{
+  margin: 32vh 30px 20vh;
+}
+.sobre_nosotros .text h2{
+  font-size: 3.4em;
+  margin-bottom: 2rem;
+}
+.sobre_nosotros .text  p{
+  font-size: 25px;
+}
+.sobre_nosotros .text .btn{
+  margin-top: 15px;
+}
+
+.sobre_nosotros .text .btn a,.sobre_nosotros .text .btn i{
+  color: var(--negro2);
+}
+
+@media(max-width: 992px){
+  .sobre_nosotros img{
+    display: none;
+  }
+}
+/* Areas de servicio */
+.services{
+  padding-top: 45px;
+  background-color: var(--gris);
+  
+}
+.services .target-container{
+  display: flex;
+  justify-content: space-around;
+  padding:20px auto 50px;
+}
+
+.services h2{
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.services .target{
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 20px auto;
+  background-color: var(--blanco);
+  width: 30vw;
+  border-radius: 10px;
+  transition: all ease-in-out .4s;
+}
+
+.services .target:hover{
+  box-shadow: 1px 1px 20px var(--negro2);
+}
+
+.services .btn{
+  margin-top: 15px;
+}
+
+.services .target-btn a,.services .target-btn i{
+  color:var(--negro2)
+}
+
+@media (max-width:768px){
+  .services .target-container{
+    flex-wrap: wrap;
+  }
+
+  .services .target{
+    width: 100vw;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* LUGAR */
+.lugar{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gris);
+}
+
+.lugar .lugar-text-container{
+  padding: 10px 20px ;
+}
+.lugar h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.lugar .lugar-map{
+  width: 100%;
+}
+
+/* footer */
+.footer{
+  background-color: var(--negro);
+  color: var(--blanco);
+  margin-top: 50px;
+  padding:10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer h2, .footer p, .footer .footer-text{
+  margin: auto auto 0 10px;
+}
+
+.footer .footer-text{
+  font-size: 0.8em;
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .navbar{
+  justify-content: space-between;
+  padding: 0%;
+}
+
+.footer .footer-redes{
+  margin: auto ;
+}
+
+.footer .footer-redes a {
+  color: var(--blanco);
+  margin: auto 1.5vw;
+}
+.footer .footer-redes a:hover , .footer .navbar .nav-link:hover{
+  color: var(--naranja);
+}

@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: var(--negro);
+    padding: 0;
+    z-index: 1;
+}
+
+
+.navbar-toggler{
+    border: none;
+}
+.nav-toggle:focus:not(:focus-visible){
+    outline: none;
+}
+.navbar-toggler i{
+    color: var(--blanco);
+}
+.navbar-brand{
+    margin: 0 15px 5px;
+}
+.navbar-brand img{
+    height: 50px;
+}
+.navbar button{
+    margin: 15px;
+}
+
+
+.nav-link, .nav-link:visited{
+    color: var(--blanco);
+}
+.nav-item{
+    padding: 0 10px;
+    transition: .6s;
+}
+.nav-item:hover{
+    background-color: var(--negro2);
+    border-radius: 5px;
+}
+.dropdown-menu{
+    background: var(--negro2);
+    border: none;
+}
+.dropdown-menu a.dropdown-item{
+    color: var(--blanco);
+}
+.dropdown-menu a.dropdown-item:hover{
+    background-color: var(--negro);
+}
