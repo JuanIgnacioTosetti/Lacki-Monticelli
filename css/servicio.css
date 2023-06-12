@@ -1,0 +1,42 @@
+.service-img{
+    max-height: 300px;  
+    object-fit: cover;
+    
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+
+.info_servicio .btn i, .info_servicio .btn a{
+    color: var(--negro);
+}
+
+.info_servicio .btn:hover i, .info_servicio .btn:hover a{
+    color: var(--blanco);
+}
+
+.info_servicio.container-fluid{
+    max-width: 950px ;
+   margin-top:25px ;
+}
+
+.navegador{
+    margin-top: 25px;
+    border: 1px solid var(--naranja);
+    border-radius: 25px;
+    padding: 15px;
+}
+.navegador-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegador-links a{
+    color: var(--negro);
+}
+
+.navegador-links:hover{
+    color: var(--negro2);
+    text-decoration: none;
+    
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content='content="width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content='content=width=device-width, initial-scale=1.0'>
     <meta name="viewport" content="width=, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,6 +16,9 @@
   <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sobrenosotros.css">
+  <link rel="stylesheet" href="./css/servicio.css">
+  <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
   

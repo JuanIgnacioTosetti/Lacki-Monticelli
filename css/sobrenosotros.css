@@ -1,0 +1,79 @@
+body{
+    background-color: var(--gris);
+}
+
+.info{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.persona img{
+    max-width: 100px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+.cards_p{
+    display: flex;
+    justify-content: space-around;
+}
+.card_p{
+    margin-bottom: 15px;
+    background-color: var(--gris2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Formulario */
+/* Estilos generales del formulario */
+.form__grupo {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+  }
+  
+  select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+  }
+  
+  /* Estilos específicos para el formulario */
+  .form__grupo input[type="text"],
+  .form__grupo input[type="email"],
+  .form__grupo textarea {
+	transition: border-color 0.3s ease;
+  }
+  
+  .form__grupo input[type="text"]:focus,
+  .form__grupo input[type="email"]:focus,
+  .form__grupo textarea:focus {
+	outline: none;
+	border-color: #007bff;
+  }
+  
+  .form__grupo select {
+	appearance: none;
+	padding-right: 30px;
+	background-image: url('https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png');
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+  }
+  

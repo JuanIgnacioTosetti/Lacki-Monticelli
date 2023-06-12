@@ -1,0 +1,25 @@
+.datos{
+    background-color: var(--gris2);
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+.contacto .numeros{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.contacto .numeros a{color: var(--negro);}
+
+.contacto-redes a i{
+    font-size:x-large;
+    margin-right: 15px;
+    color: var(--negro);
+}
+
+.contacto-redes a:hover i{
+    color: var(--negro2);
+}
+.contacto.btn{
+    margin-top: 15px;
+}
